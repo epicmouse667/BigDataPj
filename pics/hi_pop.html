@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_12606c88e73a2cc796ac0088c1e6bc41 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_12606c88e73a2cc796ac0088c1e6bc41" ></div>
+        
+</body>
+<script>    
+    
+            var map_12606c88e73a2cc796ac0088c1e6bc41 = L.map(
+                "map_12606c88e73a2cc796ac0088c1e6bc41",
+                {
+                    center: [1.0, 2.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f841ecf299e56f5effd6aee362d7d149 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_12606c88e73a2cc796ac0088c1e6bc41);
+        
+    
+            var heat_map_46df90d22e8e9bf28e2b0c3a9fc41d53 = L.heatLayer(
+                [[21.306, -157.86], [21.286, -157.707], [21.394, -157.97], [19.724, -155.087], [21.383, -158.022], [21.393, -157.74], [21.418, -157.802], [20.891, -156.467], [21.451, -158.016], [21.334, -158.026], [20.755, -156.457], [21.34, -158.066], [21.476, -157.995], [21.359, -158.081], [19.667, -155.915], [21.498, -158.026], [20.885, -156.504], [21.313, -158.006], [21.375, -157.919], [21.315, -158.027], [19.587, -154.973], [21.493, -158.062], [21.405, -158.032], [21.39, -157.933], [21.452, -158.182], [20.886, -156.666], [19.757, -156.001], [21.39, -158.155], [21.414, -157.997], [22.088, -159.352], [21.414, -158.175], [21.385, -157.925], [21.468, -158.216], [20.01, -155.625], [21.445, -157.751], [20.923, -156.507], [21.438, -157.84], [20.921, -156.302], [20.834, -156.343], [21.971, -159.353], [21.342, -158.039], [21.331, -157.954], [21.403, -158.006], [20.848, -156.319], [19.928, -155.823], [20.973, -156.665], [20.768, -156.335], [21.341, -157.733], [20.682, -156.435], [21.646, -157.923], [22.069, -159.381], [21.469, -158.017], [21.361, -158.025], [21.373, -158.027], [21.456, -157.842], [21.652, -158.058], [21.421, -157.821], [21.917, -159.522], [21.997, -159.347], [21.59, -158.109], [21.512, -158.034], [19.097, -155.775], [21.33, -157.694], [19.573, -155.957], [21.322, -157.978], [19.538, -155.188], [21.567, -158.121], [21.602, -157.903], [19.534, -154.94], [21.968, -159.714], [19.521, -154.994], [20.836, -156.531], [19.532, -155.05], [21.089, -157.0], [21.962, -159.392], [20.828, -156.915], [19.5, -155.894], [19.557, -155.014], [22.212, -159.4], [19.626, -155.91], [21.679, -157.943], [20.075, -155.466], [21.913, -159.588], [21.92, -159.501], [21.537, -158.022], [21.906, -159.582], [19.583, -155.072], [20.909, -156.369], [19.473, -155.841], [21.476, -158.035], [21.321, -158.081], [22.054, -159.339], [19.529, -155.903], [20.239, -155.831], [22.146, -159.314], [21.903, -159.461], [20.721, -156.362], [22.22, -159.481], [21.155, -157.064], [21.966, -159.669], [21.367, -157.771], [20.224, -155.808], [21.338, -158.119], [19.508, -155.079], [19.832, -155.106], [21.577, -158.159], [19.504, -154.912], [20.774, -156.014], [21.543, -157.85], [19.199, -155.479], [19.492, -155.096], [21.582, -157.89], [21.937, -159.486], [19.728, -155.978], [21.892, -159.459], [19.616, -155.037], [20.825, -156.29], [19.042, -155.625], [19.792, -155.094], [20.931, -156.686], [19.465, -155.132], [19.976, -155.237], [19.745, -155.098], [19.466, -154.916], [20.865, -156.331], [19.427, -155.221], [19.579, -155.902], [19.496, -154.945], [20.955, -156.657], [19.07, -155.575], [19.453, -155.176], [20.228, -155.78], [19.914, -155.881], [19.478, -155.252], [21.49, -157.864], [20.854, -156.642], [21.918, -159.627], [20.035, -155.374], [19.528, -154.993], [22.219, -159.561], [19.41, -154.926], [20.996, -156.645], [19.87, -155.11], [22.204, -159.498], [21.134, -157.212], [19.761, -155.093], [22.192, -159.547], [19.414, -154.959], [21.072, -156.835], [19.448, -155.277], [22.218, -159.449], [21.7, -158.006], [20.802, -156.495], [21.95, -159.639], [20.121, -155.563], [19.939, -155.87], [21.486, -158.187], [19.072, -155.614], [20.624, -156.429], [19.357, -154.975], [19.439, -154.919], [20.828, -156.619], [20.742, -156.901]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(map_12606c88e73a2cc796ac0088c1e6bc41);
+        
+</script>
