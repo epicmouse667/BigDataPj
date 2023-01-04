@@ -17,6 +17,8 @@ project of course 'big data intro' @ fudan
 - throughput.xlsx 包括机场编号ICAO code，所在城市，机场名字，机场等级以及机场吞吐量（Enplanement）
 - GDP 目录 包含美国各州各年的gdp数据
 
+# 剩余部分
+
 - Bigdata_pj.ipynb 对airport，thorughput数据集的处理 以及对poi数据爬取的部分
 - Copy of DBSCAN.ipynb 使用dbscan对机场坐标进行聚类
 - Copy_of_mining_neural_network 对机场周围的poi数据以及机场吞吐量进行回归分析
